@@ -1,0 +1,24 @@
+POST http://localhost:3001/cars/
+Content-Type: application/json
+
+{
+  "name": "neuer Content",
+  "categorie" : "private",
+  "description": "neuer Text"
+}
+
+###
+GET http://localhost:3001/cars/
+Accept: application/json
+
+###
+GET http://localhost:3001/cars?sortBy=category
+Accept: application/json
+
+###
+PATCH http://localhost:3001/cars/65a12748567ff9ea7a9425e8
+Content-Type: application/json
+
+{
+  "done": true
+}
